@@ -1,0 +1,49 @@
+body {
+    /*background: #4499ff;*/
+    background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
+    /*largura: auto, para não deformar. altura 100% do viewport (viewport height)*/
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh;
+}
+
+.menu {
+    background-color: white;
+
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Declaração abaixo denominada seletor hierárquico. Todas as li dentro da classe menu*/
+.menu li {
+    list-style: none;
+}
+
+
+/* O hover, dentre outros, são denominadas pseudo-classes*/
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*Especificidade de seletores de CSS, prioridade de carregamento do CSS, ID deve ser evitado*/
+
+
+/*Dois seletores separados por vírgula é para reaproveitamento das propriedades*/
+.site-subtitle,
+.site-title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.site-subtitle {
+    font-style: italic;
+}
